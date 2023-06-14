@@ -15,3 +15,8 @@ variable "user_data_script" {
     echo '<html><style>body {font-size: 20px;}</style><body><p>Server 2 Ace!! &#x1F0A1;</p></body></html>' | sudo tee /usr/share/nginx/html/index.html
   EOF
 }
+
+variable "vpc_cidrblock" {
+  type = string
+  description = "Enter the VPC CIDR block: "
+}
