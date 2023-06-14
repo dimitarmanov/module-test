@@ -18,5 +18,11 @@ variable "user_data_script" {
 
 variable "vpc_cidrblock" {
   type = string
-  description = "Enter the VPC CIDR block: "
+  description = "Enter the VPC CIDR block"
+}
+
+variable "cidr_ranges" {
+  type = map(string)
+  description = "Enter the CIDR Ranges for 4 Subnets"
+
 }
