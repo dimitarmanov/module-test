@@ -40,3 +40,15 @@ variable "cidr_for_subnet_4" {
   type = string
   description = "Enter the CIDR range for Subnet 1"
 }
+
+variable "desired_capacity" {
+  type = number
+}
+
+variable "min_size" {
+  type = number
+}
+
+variable "max_size" {
+  type = number
+}
