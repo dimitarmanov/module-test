@@ -16,13 +16,27 @@ variable "user_data_script" {
   EOF
 }
 
-variable "vpc_cidrblock" {
+variable "vpc_cidr" {
   type = string
   description = "Enter the VPC CIDR block"
 }
 
-variable "cidr_ranges" {
-  type = map(string)
-  description = "Enter the CIDR Ranges for 4 Subnets"
+variable "cidr_for_subnet_1" {
+  type = string
+  description = "Enter the CIDR range for Subnet 1"
+}
 
+variable "cidr_for_subnet_2" {
+  type = string
+  description = "Enter the CIDR range for Subnet 1"
+}
+
+variable "cidr_for_subnet_3" {
+  type = string
+  description = "Enter the CIDR range for Subnet 1"
+}
+
+variable "cidr_for_subnet_4" {
+  type = string
+  description = "Enter the CIDR range for Subnet 1"
 }
