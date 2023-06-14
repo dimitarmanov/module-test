@@ -43,12 +43,15 @@ variable "cidr_for_subnet_4" {
 
 variable "desired_capacity" {
   type = number
+  default = 2
 }
 
 variable "min_size" {
   type = number
+  default = 2
 }
 
 variable "max_size" {
   type = number
+  default = 4
 }
